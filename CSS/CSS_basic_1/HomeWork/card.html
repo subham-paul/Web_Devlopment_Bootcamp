@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dotbatch {
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            box-shadow: 1px 5px 10px rgb(225, 210, 210);
+            padding: 1.5rem;
+        }
+
+        #image {
+            width: 400px;
+            height: 200px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        .line {
+            width: 80%;
+            border: 1px solid grey;
+        }
+
+        .paragraph {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        p {
+            font-size: large;
+            font-weight: 900;
+        }
+
+        .currentprice {
+            color: rgb(150, 150, 230);
+        }
+
+        .Original-price {
+            color: gray;
+        }
+
+        .Discount {
+            color: aliceblue;
+            background-color: rgb(18, 185, 138);
+            border-radius: 10px;
+            font-size: 18px;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="dotbatch">
+        <img src="https://codehelp.s3.ap-south-1.amazonaws.com/Web_Dev_670f900667.jpg" alt="code help" id="image">
+        <h1>Web dovelopment master course @dotbatch</h1>
+        <div class="line"></div>
+        <p class="paragraph">
+            <span class="currentprice">₹4500</span>
+            <del class="Original-price">₹6999</del>
+            <span class="Discount">42% off</span>
+        </p>
+    </div>
+</body>
+
+</html>
