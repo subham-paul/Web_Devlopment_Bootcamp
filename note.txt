@@ -1,0 +1,2 @@
+thead vs th -> 
+<th> tag is used to give header in the cell of a table in HTML whereas <thead> tag is used to give the header of a group of a table.

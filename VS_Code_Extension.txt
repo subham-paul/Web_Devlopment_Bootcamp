@@ -1,0 +1,9 @@
+Live Server
+Auto Close Tag
+Auto Rename Tag
+Tailwind CSS IntelliSense
+Babel ES6/ES7
+Babel JavaScript
+Prettier - Code Formatter
+Simple React Snippets
+ES7+ React/Redux/React-Native Snippets
