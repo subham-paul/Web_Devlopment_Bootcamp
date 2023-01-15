@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <link rel="icon"
+        href="https://res.cloudinary.com/codehelp/image/upload/v1667493133/codehelpFinalAssets/ort4cxqmugzj9an4sbae.png">
+    <style>
+        h1 {
+            background-color: rgb(148, 135, 222);
+            text-align: center;
+            box-sizing: content-box;
+        }
+
+        .card-outer-body {
+            border: 1px solid rgba(0, 0, 0, 0.066);
+            width: 350px;
+            border-radius: 15px;
+            padding: 10px;
+            align-content: center;
+        }
+
+        .card-outer-body:hover {
+            background-color: rgba(228, 223, 245, 0.39);
+        }
+
+        .card-image {
+            border-radius: 15px;
+        }
+
+        .card-caption {
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .column {
+            float: left;
+            width: 25%;
+            padding: 30px;
+        }
+
+        span {
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #discount {
+            color: rgb(114, 114, 250);
+            font-weight: bold;
+        }
+
+        #price {
+            padding: 10px;
+            font-weight: bold;
+            text-decoration: line-through;
+            color: silver;
+        }
+
+        #offer {
+            padding: 5px;
+            background-color: rgb(104, 244, 165);
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column">
+            <div class="card-outer-body">
+                <div class="card-image">
+                    <img src="https://dz8fbjd9gwp2s.cloudfront.net/courses/63ac9183e4b0f1067f1b7b32/63ac9183e4b0f1067f1b7b32_scaled_cover.jpg?v=1"
+                        alt="Data Structure and Algorithm" width="350px">
+                </div>
+                <div class="card-caption">
+                    <h3>Data Structures & Algorithms Master Course</h3>
+                    <hr>
+                </div>
+                <div class="card-price">
+                    <span id="discount">&#8377;3500</span>
+                    <span id="price">&#8377;7000</span>
+                    <span id="offer">50% off</span>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card-outer-body">
+                <div class="card-image">
+                    <img src="https://dz8fbjd9gwp2s.cloudfront.net/courses/6375d571e4b01075b1507cbf/6375d571e4b01075b1507cbf_scaled_cover.jpg?v=1"
+                        alt="Webdevelopment Course Card" width="350px">
+                </div>
+                <div class="card-caption">
+                    <h3>Web Development Master Course @dot Batch</h3>
+                    <hr>
+                </div>
+                <div class="card-price">
+                    <span id="discount">&#8377;4500</span>
+                    <span id="price">&#8377;6999</span>
+                    <span id="offer">42% off</span>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card-outer-body">
+                <div class="card-image">
+                    <img src="https://dz8fbjd9gwp2s.cloudfront.net/courses/62ea605d0cf2fd99c8b4eb04/62ea605d0cf2fd99c8b4eb04_scaled_cover.jpg?v=4"
+                        alt="OOP Course" width="350px">
+                </div>
+                <div class="card-caption">
+                    <h3>Cracking Object Oriented Design Interviews</h3>
+                    <hr>
+                </div>
+                <div class="card-price">
+                    <span id="discount">&#8377;800</span>
+                    <span id="price">&#8377;1999</span>
+                    <span id="offer">40% off</span>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card-outer-body">
+                <div class="card-image">
+                    <img src="https://dz8fbjd9gwp2s.cloudfront.net/courses/63512441e4b0913195f2e72e/63512441e4b0913195f2e72e_scaled_cover.jpg?v=2"
+                        alt="OOP Course" width="350px">
+                </div>
+                <div class="card-caption">
+                    <h3>Master Course on Recursion and Backtracking</h3>
+                    <hr>
+                </div>
+                <div class="card-price">
+                    <span id="discount">&#8377;Free</span>
+                    <span id="price">&#8377;2799</span>
+                    <span id="offer">100% off</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
