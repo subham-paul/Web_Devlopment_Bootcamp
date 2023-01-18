@@ -6,7 +6,7 @@ div {
   
   .perspective {
     /* Includes a perspective to create a 3D space */
-    transform: perspective(400px) translateZ(-100px);
+    transform: perspective(400px) translateZ(-100px) scaleX(2) scaleY(1);
     background-color: limegreen;
   }
   

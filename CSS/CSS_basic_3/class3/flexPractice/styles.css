@@ -43,11 +43,10 @@
     order:8;
     /* align-self:flex-end; */
     /* flex-shrink:2; */
-    /* flex-grow:1;
-} */
+    /* flex-grow:1; */
 }
 
 #box2{
     order:8;
-    /* align-self:stretch;
+    /* align-self:stretch;*/
 } 

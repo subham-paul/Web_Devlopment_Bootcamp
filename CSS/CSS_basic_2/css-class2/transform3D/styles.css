@@ -1,3 +1,12 @@
+.static{
+  background-color: green;
+}
+.translated{
+  background-color: orangered;
+}
+.scaled{
+  background-color: red;
+}
 div{
     height:100px;
     width:100px;
@@ -6,7 +15,7 @@ div{
 }
 
 .translated{
-  transform: perspective(15px) translateZ(-10px);
+  transform: perspective(100px) translateZ(-10px);
 }
 
 .scaled{
