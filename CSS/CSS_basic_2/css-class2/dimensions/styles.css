@@ -1,23 +1,36 @@
 .box{
-    max-height:100px;
-    border:1px solid black;
+    max-height:70px;
+    min-width: 500px;
+    border:3px solid black;
+    overflow: hidden;
     overflow: scroll;
+    overflow: visible;
+    overflow: auto; /* always perform last one */
 }
 
 .mydiv{
-    margin:10px;
+    margin:20px;
     min-height:100px;
-    border:1px solid black;
+    border:1px solid red;
 }
 
 #divi{
+    text-align: right;
     height:50px;
-    border:1px solid black;
+    border:1px solid maroon;
     overflow: auto;
+    margin: 10px;
 }
 .box1{
     background-color: aqua;
     position: fixed;
+}
+.blank{
+    height: 20rem;
+    width: 100em;
+    background-color: orangered;
+    margin: 10px;
+    padding: 10px;
 }
 
 .divc{
@@ -25,6 +38,6 @@
     background-color: brown;
     color:white;
     position: sticky;
-    top:500px;
+    top:450px;
     left:500px;
 }

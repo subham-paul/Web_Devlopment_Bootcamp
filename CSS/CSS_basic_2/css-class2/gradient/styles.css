@@ -1,7 +1,11 @@
 .box{
     border:1px solid black;
+    margin: -8px;
+    padding-top: 20px;
+    font-weight: bolder;
+    text-align: center;
     height:200px;
-    width:150px;
+    width:350px;
     background-image: linear-gradient(Red,blue);
     background-image: linear-gradient(to right,Red,blue);
     background-image: linear-gradient(to bottom right,Red,blue,green);
@@ -13,9 +17,36 @@
 
 .mydiv{
     border:1px solid black;
-    margin:10px;
-    height:400px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top:18px;
+    padding: 10px;
+    height:200px;
     width:200px;
     background-image: radial-gradient(circle,Red,blue,orange);
     background-image:radial-gradient(yellow 5%, orange 10%, red 50%);
+}
+
+.cGrad{
+    margin-top:18px;
+    text-align: center;
+    text-align-last: justify;
+    font-weight: bolder;
+    padding: 10px;
+    height:200px;
+    width:200px;
+    background-image: conic-gradient(red, green);
+    background-image: conic-gradient(red, yellow, green);
+    background-image: conic-gradient(red, green, blue);
+    
+    background-image: conic-gradient(red, yellow, green, blue, black);
+    
+    background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+    
+    background-image: conic-gradient(red, yellow, green, blue, white);
+    border-radius: 50%;
+
+    background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, rgb(186, 186, 228) 270deg);
+    border-radius: 50%;
+    
 }
