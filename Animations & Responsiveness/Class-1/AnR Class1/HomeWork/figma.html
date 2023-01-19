@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page layout</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        #logo img {
+            height: 100px;
+            margin: 20px;
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+
+        #text1 {
+            padding-left: 150px;
+            padding-top: 30px;
+            color: blueviolet;
+        }
+
+        #text3 {
+            padding-left: 150px;
+            padding-top: 30px;
+            color: blueviolet;
+        }
+
+        #logo1 img {
+            height: 100px;
+            width: 100px;
+            margin-top: 100px;
+            margin-left: 40px;
+        }
+
+        #navbar {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            align-items: center;
+            /* position: fixed; */
+            top: 0;
+        }
+
+        #navbar ul {
+            display: flex;
+            margin-left: 20px;
+        }
+
+        #navbar ul li {
+            margin-top: 20px;
+            font-size: 20px;
+            display: block;
+            padding: 5px 32px;
+            border-radius: 20px;
+            text-decoration: none;
+
+        }
+
+        .content1 h1 {
+            padding-top: 90px;
+            padding-left: 50px;
+
+        }
+
+        .content2 #text2 {
+            padding-top: 50px;
+            padding-left: 60px;
+        }
+
+        .line {
+            margin-top: 5px;
+            width: 170px;
+            margin-left: 50px;
+            background-color: gray;
+        }
+
+        .content3 h3 {
+            color: blueviolet;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+
+        .line2 {
+            width: 210px;
+            margin-left: 40px;
+            margin-top: 5px;
+
+        }
+
+        p .copy {
+            padding-left: 5px;
+            color: blueviolet;
+        }
+
+
+        #img1 img {
+            width: 380px;
+            height: 250px;
+            padding-left: 100px;
+            padding-top: 100px;
+
+        }
+
+        #img2 img {
+            height: 300px;
+            width: 280px;
+            padding-left: 50px;
+            padding-top: 60px;
+
+        }
+
+        .content2 {
+            padding-left: 230px;
+            margin-top: 0px;
+
+        }
+
+        .content3 p {
+            padding-left: 40px;
+
+        }
+
+
+        #first {
+            display: flex;
+            position: relative;
+        }
+
+        #second {
+            display: flex;
+            position: relative;
+        }
+
+
+        footer {
+            display: flex;
+            position: relative;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        .privacy {
+            margin-left: 3em;
+            width: 400px;
+        }
+
+        .logo1 h3 {
+            margin-top: 50px;
+            color: blueviolet;
+        }
+
+        .logo1 p {
+            color: gray;
+            margin-top: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .text1 h3 {
+            color: blueviolet;
+        }
+
+        .text1 h4 {
+
+            margin-top: 40px;
+            color: blueviolet;
+        }
+
+        .text1 p a {
+            color: gray;
+            text-decoration: none;
+            /* color: slateblue; */
+        }
+
+        .text1 p {
+            margin-top: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: gray;
+
+        }
+
+        .menu h3 {
+            color: blueviolet;
+            margin-left: 70px;
+        }
+
+        .menu ul {
+            margin-top: 20px;
+            margin-left: 30px;
+
+        }
+
+        .menu ul li {
+            list-style: none;
+            padding: 3px;
+        }
+
+        .menu ul li a {
+            color: gray;
+            text-decoration: none;
+
+        }
+
+        .icon {
+            margin-left: 200px;
+            display: flex;
+        }
+
+        .icon img {
+
+            width: 50px;
+            height: 50px;
+            justify-content: space-between;
+        }
+
+        button {
+            background-color: slateblue;
+            color: white;
+            padding: 10px;
+            font-size: 15px;
+            margin-left: 130px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav id="navbar">
+            <div id="logo">
+                <img src="codehelp.png" alt="logo">
+            </div>
+
+            <ul>
+                <li class="item"><a href="#team">Team</a></li>
+                <li class="item"><a href="#About us">About us</a></li>
+                <li class="item"><a href="#courses">Courses</a></li>
+                <li class="item"><a href="#contact">Contact </a></li>
+            </ul>
+
+            <button>START A PAGE</button>
+
+        </nav>
+
+        <section id="first">
+            <div class="content1">
+                <h1> Team CodeHelp</h1>
+                <hr class="line">
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>
+                    Recusandae, odit. Labore dolorum quaerat pariatur esse illo eaque,<br>
+                    possimus in assumenda. Molestias consequuntur consectetur sint<br>
+                    perspiciatis laborum corrupti voluptatum accusamus possimus.
+                    <br>
+                    <br>
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>
+                    Recusandae, odit. Labore dolorum quaerat pariatur esse illo eaque,<br>
+                </p>
+            </div>
+            <div id="img1">
+                <img src="lovebabbar.png">
+
+            </div>
+        </section>
+
+        <section id="second">
+            <div id="img2">
+                <img src="download.jpeg">
+            </div>
+
+            <div class="content2">
+                <h1 id="text2"> founder, CEO</h1>
+                <hr class="line">
+                <p id="para2"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>
+                    Recusandae, odit. Labore dolorum quaerat pariatur esse illo eaque,<br>
+                    possimus in assumenda. Molestias consequuntur consectetur sint<br>
+                    perspiciatis laborum corrupt.
+                    <br>
+                    <br>
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>
+                    Recusandae, odit. Labore dolorum quaerat pariatur esse illo,<br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>
+                    Recusandae, odit. <br>
+                </p>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <div class="logo1">
+                <figure>
+                    <img src="codehelp.png" alt="logo">
+                    <h3><a href="">OUR PRIVACY POLICY</a></h3><br>
+                    <p>
+                        &copy; lorem Ipsum 2023 <br>
+                        All Rights Reserved
+                    </p>
+                </figure>
+            </div>
+            <div class="text1">
+                <h3>ADDRESS</h3>
+                <p>
+                    Lorem lpsum is simply dummy text of the <br>
+                    printing and typesetting industry. Lorem <br>
+                    lpsum has
+                </p>
+                <h4>EMAIL</h4>
+                <p><a href="mailto:example@codehelp.com">example@codehelp.com</a></p>
+            </div>
+            <div class="menu">
+                <h3>MENU</h3>
+                <ul>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="icon">
+                <a href=""><img src="facebook1.jpeg" alt=""></a>
+                <a href=""><img src="twitter.png" alt=""></a>
+                <a href=""><img src="insta.jpeg" alt=""></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+
+#logo img{
+height: 100px;
+margin: 20px;
+margin-top: 100px;
+margin-left: 50px;
+}
+
+#text1{
+padding-left: 150px;
+padding-top: 30px;
+color: blueviolet;
+}
+
+#text3{
+padding-left: 150px;
+padding-top: 30px;
+color: blueviolet;
+}
+#logo1 img{
+height: 100px;
+width: 100px;
+margin-top: 100px;
+margin-left: 40px;
+}
+#navbar{
+height: 60px;
+display: flex;
+align-items: center;
+align-items: center;
+/* position: fixed; */
+top: 0;
+}
+#navbar ul{
+display: flex;
+margin-left: 20px;
+}
+#navbar ul li{
+margin-top: 20px;
+font-size: 20px;
+display: block;
+padding: 5px 32px;
+border-radius: 20px;
+text-decoration: none;
+
+}
+.content1 h1{
+padding-top: 90px;
+padding-left: 50px;
+
+}
+.content2 #text2{
+padding-top: 50px;
+padding-left: 60px;
+}
+.line{
+margin-top: 5px;
+width: 170px;
+margin-left: 50px;
+background-color: gray;
+}
+.content3 h3 {
+color:blueviolet;
+margin-top: 20px;
+margin-left: 40px;
+}
+.line2{
+width: 210px;
+margin-left: 40px;
+margin-top: 5px;
+
+}
+p .copy{
+padding-left: 5px;
+color: blueviolet;
+}
+
+
+#img1 img{
+width: 380px;
+height: 250px;
+padding-left: 100px;
+padding-top: 100px;
+
+}
+#img2 img{
+height: 300px;
+width: 280px;
+padding-left: 50px;
+padding-top: 60px;
+
+}
+.content2{
+padding-left: 230px;
+margin-top: 0px;
+
+}
+.content3 p{
+padding-left: 40px;
+
+}
+
+
+#first{
+display: flex;
+position: relative;
+}
+
+#second{
+display: flex;
+position: relative;
+}
+
+
+footer{
+display: flex;
+position: relative;
+margin-top: 50px;
+margin-bottom: 30px;
+}
+
+.privacy{
+margin-left: 3em;
+width: 400px;
+}
+
+.logo1 h3{
+margin-top: 50px;
+color: blueviolet;
+}
+
+.logo1 p{
+color: gray;
+margin-top: 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text1 h3{
+color: blueviolet;
+}
+.text1 h4{
+
+margin-top: 40px;
+color: blueviolet;
+}
+.text1 p a{
+color: gray;
+text-decoration: none;
+/* color: slateblue; */
+}
+.text1 p{
+margin-top: 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: gray;
+
+}
+
+.menu h3{
+color: blueviolet;
+margin-left: 70px;
+}
+.menu ul{
+margin-top: 20px;
+margin-left: 30px;
+
+}
+
+.menu ul li{
+list-style: none;
+padding: 3px;
+}
+
+.menu ul li a{
+color: gray;
+text-decoration: none;
+
+}
+.icon{
+margin-left: 200px;
+display: flex;
+}
+.icon img{
+
+width: 50px;
+height: 50px;
+justify-content: space-between;
+}
+
+button{
+background-color:slateblue;
+color: white;
+padding: 10px;
+font-size: 15px;
+margin-left: 130px;
+border-radius: 10px;
+border: none;
+cursor: pointer;
+margin-top: 10px;
+
+}
