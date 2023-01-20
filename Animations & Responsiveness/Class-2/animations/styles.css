@@ -1,11 +1,11 @@
 
 :root{
-    /* --dark-red:#981a2c; */
+    --dark-red:#53981a;
 }
 
 .container{
-    border:1px solid brown;
-    background-color: green;
+    border:5px solid brown;
+    background-color: yellow;
     height:300px;
     width:300px;
     background-color: var(--dark-red);
