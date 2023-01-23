@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card basic</title>
+    <style>
+        .card{
+            height: 350px;
+            width: 350px;
+            box-shadow: 1px 1px 20px rgb(225, 210, 210);
+            padding: 1.5rem;
+        }
+        #image{
+            height: 200px;
+            width: 350px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .line{
+            width: 80%;
+            border: 1px solid black;
+        }
+        .para{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        p{
+            font-size: large;
+            font-weight: bold;
+        }
+        .currentPr{
+            color: rgb(150, 150, 230);
+        }
+        .actualPr {
+            color: grey;
+        }
+        .offerPer{
+            border-radius: 10px;
+            color: white;
+            font-size: 18px;
+            background-color: rgb(110, 196, 110);
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <img src="https://codehelp.s3.ap-south-1.amazonaws.com/Web_Dev_670f900667.jpg" alt="code help" id="image">
+            <h1>Web dev bootcamp</h1>
+            <div class="line"></div>
+            <p class="para">
+                <span class="currentPr">₹3999</span>
+                <del class="actualPr">₹6999</del>
+                <span class="offerPer">42% off</span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

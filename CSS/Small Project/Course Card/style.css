@@ -11,13 +11,15 @@ h1 {
     border-radius: 15px;
     padding: 10px;
     align-content: center;
+    box-shadow: 1px 5px 10px rgb(225, 210, 210);
 }
 
 .card-outer-body:hover {
     background-color: rgba(228, 223, 245, 0.39);
+    
 }
 
-.card-image {
+img{
     border-radius: 15px;
 }
 
