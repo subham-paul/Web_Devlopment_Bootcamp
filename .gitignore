@@ -1,5 +1,6 @@
 # Notes/
 # *.pdf
 *.txt
+node_modules
 # *.jpg
 # *.jpeg
