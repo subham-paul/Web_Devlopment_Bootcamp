@@ -20,6 +20,7 @@ let passwordLength = 10;
 let checkCount = 0;
 handleSlider();
 //ste strength circle color to grey
+setIndicator("#ccc");
 
 
 //set passwordLength
@@ -27,11 +28,14 @@ function handleSlider() {
     inputSlider.value = passwordLength;
     lengthDisplay.innerText = passwordLength;
     //or kuch bhi karna chahiye ? - HW
+    const min = inputSlider.min;
+    const max = inputSlider.max;
+    inputSlider.style.backgroundSize = ( (passwordLength - min)*100/(max - min)) + "% 100%"
 }
 
 function setIndicator(color) {
     indicator.style.backgroundColor = color;
-    //shadow - HW
+    indicator.style.boxShadow = `0px 0px 12px 1px ${color}`;
 }
 
 function getRndInteger(min, max) {
@@ -66,15 +70,15 @@ function calcStrength() {
     if (symbolsCheck.checked) hasSym = true;
 
     if (hasUpper && hasLower && (hasNum || hasSym) && passwordLength >= 8) {
-      setIndicator("#0f0");
+    setIndicator("#0f0");
     } else if (
-      (hasLower || hasUpper) &&
-      (hasNum || hasSym) &&
-      passwordLength >= 6
+    (hasLower || hasUpper) &&
+    (hasNum || hasSym) &&
+    passwordLength >= 6
     ) {
-      setIndicator("#ff0");
+    setIndicator("#ff0");
     } else {
-      setIndicator("#f00");
+    setIndicator("#f00");
     }
 }
 
@@ -98,11 +102,13 @@ async function copyContent() {
 function shufflePassword(array) {
     //Fisher Yates Method
     for (let i = array.length - 1; i > 0; i--) {
+        //random J, find out using random function
         const j = Math.floor(Math.random() * (i + 1));
+        //swap number at i index and j index
         const temp = array[i];
         array[i] = array[j];
         array[j] = temp;
-      }
+    }
     let str = "";
     array.forEach((el) => (str += el));
     return str;
