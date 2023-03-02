@@ -1,6 +1,6 @@
 console.log('Hello Jee babbar');
 
-const API_KEY = "d1845658f92b31c64bd94f06f7188c9c";
+const API_KEY = "5eb54a3efdf0a323e0071d8d93f03ad5";
 
 function renderWeatherInfo(data) {
         let newPara = document.createElement('p');
@@ -12,7 +12,7 @@ function renderWeatherInfo(data) {
 async function fetchWeatherDetails() {
 
     try {
-        let city = "goa";
+        let city = "Delhi";
 
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
         const data = await response.json();
@@ -49,26 +49,26 @@ async function getCustomWeatherDetails() {
 
 function switchTab(clickedTab) {
 
-  apiErrorContainer.classList.remove("active");
+apiErrorContainer.classList.remove("active");
 
-  if (clickedTab !== currentTab) {
+if (clickedTab !== currentTab) {
     currentTab.classList.remove("current-tab");
     currentTab = clickedTab;
     currentTab.classList.add("current-tab");
 
     if (!searchForm.classList.contains("active")) {
-      userInfoContainer.classList.remove("active");
-      grantAccessContainer.classList.remove("active");
-      searchForm.classList.add("active");
+        userInfoContainer.classList.remove("active");
+        grantAccessContainer.classList.remove("active");
+        searchForm.classList.add("active");
     } 
     else {
-      searchForm.classList.remove("active");
-      userInfoContainer.classList.remove("active");
+        searchForm.classList.remove("active");
+        userInfoContainer.classList.remove("active");
       //getFromSessionStorage();
     }
 
     // console.log("Current Tab", currentTab);
-  }
+    }
 }
 
 function getLocation() {
