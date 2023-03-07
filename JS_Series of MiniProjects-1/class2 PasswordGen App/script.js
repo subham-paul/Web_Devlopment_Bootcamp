@@ -147,8 +147,8 @@ copyBtn.addEventListener('click', () => {
 generateBtn.addEventListener('click', () => {
     //none of the checkbox are selected
 
-    if(checkCount == 0) 
-        return;
+    // if(checkCount == 0) 
+    //     return;
 
     if(passwordLength < checkCount) {
         passwordLength = checkCount;
@@ -191,6 +191,13 @@ generateBtn.addEventListener('click', () => {
 
     if(symbolsCheck.checked)
         funcArr.push(generateSymbol);
+
+    if(funcArr.length == 0){
+        funcArr.push(generateUpperCase);
+        funcArr.push(generateLowerCase);
+        funcArr.push(generateRandomNumber);
+        funcArr.push(generateSymbol);
+    }
 
     //compulsory addition
     for(let i=0; i<funcArr.length; i++) {
